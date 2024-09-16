@@ -1,0 +1,275 @@
+@import "../mixin/adaptive";
+
+.header {
+	height: 142px;
+	
+
+	&__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 16px;
+		background-color: rgb(23, 121, 229);
+		height: 42px;
+		color: rgb(246, 250, 255);
+		padding: 8px 130px 8px 130px;
+
+		@include _1440 {
+			padding: 8px 70px 8px 70px;
+		}
+
+		@include _1280 {
+			padding: 8px 50px 8px 50px;
+		}
+
+		@include _1024 {
+			padding: 8px 42px 8px 42px;
+			font-size: 14px;
+		}
+
+		@include _768 {
+			padding: 8px 34px 8px 34px;
+			font-size: 12px;
+		}
+		@include _360{
+			padding: 8px 20px 8px 20px;
+		}
+	}
+
+	&__top-address {
+		@include _360 {
+			display: none;
+		}
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 10px;
+		padding: 0px;
+	}
+
+	&__top .ico-adress {
+		width: 20px;
+		height: 20px;
+	}
+
+	&__top-contacts {
+
+		@include _1024 {
+			gap: 40px;
+		}
+
+		@include _768 {
+			gap: 30px;
+		}
+		width: 360px;
+		height: 26px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 60px;
+		padding: 0px;
+	}
+
+	&__top-contacts .email, .number{
+		transition: border-bottom 0.4s, color 0.4s, padding 0.4s;
+	}
+	&__top-contacts .email:hover, .number:hover{
+		border-bottom: 1px solid rgb(251, 252, 255);
+		padding: 0px 0px 2px 0px;
+		cursor: pointer;
+	}
+
+	&__down {
+		@include _1440 {
+			padding: 20px 70px 20px 70px;
+		}
+
+		@include _1280 {
+			padding: 16px 50px 16px 50px;
+		}
+
+		@include _1024 {
+			padding: 16px 42px 16px 42px;
+		}
+
+		@include _768 {
+			padding: 16px 34px 16px 34px;
+		}
+
+		@include _360 {
+			padding: 12px 20px 12px 20px;
+		}
+
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		border-bottom: 1px solid rgba(50, 50, 50, 0.05);
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		padding: 20px 130px 20px 130px;
+	}
+
+	&__down-logo {
+		background-image: url("../../img/logo.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 194px;
+		height: 60px;
+		margin: 0px 10px;
+
+		@include _1440 {
+			width: 194px;
+			height: 60px;
+		}
+
+		@include _1280 {
+			width: 156px;
+			height: 48px;
+		}
+
+		@include _1024 {
+			width: 130px;
+			height: 40px;
+		}
+	}
+
+	&__down-links {
+		@include _1440 {
+			gap: 40px;
+		}
+
+		@include _1280 {
+			gap: 30px;
+		}
+
+		@include _1024 {
+			font-size: 14px;
+		}
+
+		@include _768 {
+			display: none;
+		}
+
+		@include _360 {
+			display: none;
+		}
+
+		height: 29px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 60px;
+		padding: 0;
+		font-size: 18px;
+		color: rgb(49, 49, 49);
+
+	}
+
+	&__down-links a {
+		color: rgb(49, 49, 49);
+		font-family: Inter Tight;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: 0%;
+		text-align: left;
+		transition: border-bottom 0.4s, color 0.4s, padding 0.4s;
+	
+
+		@include _1024 {
+			font-size: 14px;
+		}
+	}
+	&__down-links a:hover{
+		border-bottom: 1px solid rgb(23, 121, 229);
+		color:rgb(23, 121, 229);
+		padding: 0px 0px 2px 0px;
+		cursor: pointer;
+	}
+	&__down-btn {
+		@include _1280 {
+			height: 56px;
+			gap: 40px;
+			padding: 8px 8px 8px 40px;
+		}
+
+		@include _1024 {
+			height: 46px;
+			padding: 8px 8px 8px 30px;
+			font-size: 14px;
+		}
+
+		@include _768 {
+			display: none;
+		}
+
+		@include _360 {
+			display: none;
+		}
+		height: 60px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+		padding: 10px 10px 10px 50px;
+		background: rgb(23, 121, 229);
+	}
+
+	&__down-btn .arrow {
+		@include _1024 {
+			width: 30px;
+			height: 30px;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background: rgb(246, 250, 255);
+	}
+	&__down-btn .arrow svg{
+		@include _1024 {
+			width: 12px;
+			height: 12px;
+			
+		}
+	}
+	&__down-btn .btn-text {
+		@include _1024 {
+			font-size: 14px;
+		}
+		color: rgb(246, 250, 255);
+		font-family: Inter Tight;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 120%;
+		letter-spacing: 0%;
+		text-align: left;
+		
+		
+
+	}
+
+
+
+	.btn, .arrow, .arrow svg{
+		transition: border-radius 0.6s; 
+	}
+	.btn:hover{
+		cursor: pointer;
+		border-radius: 80px;
+		.arrow{
+			border-radius: 80px;
+		}
+		
+	}
+}
