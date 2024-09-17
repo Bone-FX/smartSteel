@@ -5,6 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/style.css">
+
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+	<script src="js/swiper.js" defer></script>
+	
 	<title>Document</title>
 </head>
 
@@ -57,17 +65,21 @@
 		</div>
 	</header>
 	<section class="main">
-		<div class="main__wrap-row1">	
-			<div class="main-title">Умная</div>
-			<div class="main__carusel"></div>
+			<div class="main__title">
+			<div class="title smart">Умная</div>
+			<div class="title steel">сталь</div>
 		</div>
-		<div class="main__wrap-row2">	
-			<div >Лидер в производстве оборудования для обработки твердых материалов</div>
-			<div class="main-title">сталь</div>
-			<div>инновации и надежность в каждом станке</div>
-		</div>
+			<swiper-container class="swiper-container main__swiper">
+				<swiper-slide><div class="main__carusel-img img1"></div></swiper-slide>
+				<swiper-slide><div class="main__carusel-img img2"></div></swiper-slide>
+				<swiper-slide><div class="main__carusel-img img3"></div></swiper-slide>
+				<swiper-slide><div class="main__carusel-img img4"></div></swiper-slide>
+				<swiper-slide><div class="main__carusel-img img5"></div></swiper-slide>
+			 </swiper-container>	
+			<div class="main__title-left">Лидер в производстве оборудования для обработки твердых материалов</div>
+			<div class="main__title-right">инновации и надежность в каждом станке</div>
 		<div class="main__link-btn btn">
-			<a class="header__down-btn btn">
+			<a class=" main__btn btn">
 				<div class="btn-text">Проектирование и сборка электрических щитов</div>
 				<div class="arrow">
 					<svg width="17.414185" height="17.414215" viewBox="0 0 17.4142 17.4142" fill="none"
@@ -81,7 +93,7 @@
 					</svg>
 				</div>
 			</a>
-			<a class="header__down-btn btn">
+			<a class="main__btn btn">
 				<div class="btn-text">Профессиональные сварочные работы</div>
 				<div class="arrow">
 					<svg width="17.414185" height="17.414215" viewBox="0 0 17.4142 17.4142" fill="none"
@@ -95,7 +107,7 @@
 					</svg>
 				</div>
 			</a>
-			<a class="header__down-btn btn">
+			<a class="main__btn btn">
 				<div class="btn-text">Создание автоматизированных производственных линий</div>
 				<div class="arrow">
 					<svg width="17.414185" height="17.414215" viewBox="0 0 17.4142 17.4142" fill="none"
@@ -109,7 +121,7 @@
 					</svg>
 				</div>
 			</a>
-			<a class="header__down-btn btn">
+			<a class="main__btn btn">
 				<div class="btn-text">Создание автоматизированных производственных линий</div>
 				<div class="arrow">
 					<svg width="17.414185" height="17.414215" viewBox="0 0 17.4142 17.4142" fill="none"

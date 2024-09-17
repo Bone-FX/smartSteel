@@ -15,11 +15,445 @@ main-title {
 .main {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	height: 830px;
 
-	&__wrap-row1 {
+	@include _1440 {
+		height: 750px;
+	}
+
+	@include _1280 {
+		height: 750px;
+	}
+
+	@include _1024 {
+		height: 670px;
+	}
+
+	@include _768 {
+		height: 670px;
+	}
+
+	@include _360 {
+		height: 630px;
+	}
+
+
+	&__wrap {
+		height: 596px;
+	}
+
+
+	&__link-btn {
 		display: flex;
 		flex-direction: row;
+	}
 
-		
+	&__swiper {
+		position: absolute;
+		width: 1380px;
+		height: 280px;
+		left: 690px;
+		top: 222px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 20px;
+
+		@include _1440 {
+			height: 220px;
+			left: 510px;
+		}
+
+		@include _1280 {
+			height: 200px;
+			left: 450px;
+			top: 210px;
+		}
+
+		@include _1024 {
+			height: 160px;
+			left: 362px;
+			top: 197px;
+		}
+
+		@include _768 {
+			height: 160px;
+			left: 394px;
+			top: 188px;
+		}
+
+		@include _360 {
+			height: 160px;
+			left: 20px;
+			top: 140px;
+		}
+	}
+
+	&__carusel-img {
+		width: 260px;
+		height: 280px;
+		margin: 0px 20px;
+
+		@include _1440 {
+			width: 200px;
+			height: 220px;
+		}
+
+		@include _1280 {
+			width: 180px;
+			height: 200px;
+		}
+
+		@include _1024 {
+			width: 140px;
+			height: 160px;
+		}
+
+		@include _768 {
+			width: 140px;
+			height: 160px;
+		}
+
+		@include _360 {
+			width: 140px;
+			height: 160px;
+		}
+	}
+
+	&__title-left {
+		position: absolute;
+		width: 226px;
+		height: 104px;
+		left: 130px;
+		top: 567px;
+
+		@include _1440 {
+			width: 200px;
+			height: 66px;
+			left: 70px;
+			top: 483px;
+		}
+
+		@include _1280 {
+			width: 200px;
+			height: 66px;
+			left: 50px;
+			top: 445px;
+		}
+
+		@include _1024 {
+			width: 170px;
+			height: 57px;
+			left: 42px;
+			top: 382px;
+			font-size: 12px;
+		}
+
+		@include _768 {
+			width: 170px;
+			height: 57px;
+			left: 42px;
+			top: 382px;
+			font-size: 12px;
+		}
+
+		@include _360 {
+			width: 122px;
+			height: 56px;
+			left: 20px;
+			top: 405px;
+			font-size: 10px;
+		}
+
+		color: rgb(50, 50, 50);
+		font-family: Inter Tight;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 160%;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+
+	&__title-right {
+
+		position: absolute;
+		width: 700px;
+		height: 120px;
+		left: 970px;
+		top: 542px;
+
+		@include _1440 {
+			width: 570px;
+			height: 96px;
+			left: 730px;
+			top: 462px;
+			font-size: 48px;
+		}
+
+		@include _1280 {
+			width: 520px;
+			height: 88px;
+			left: 650px;
+			top: 430px;
+			font-size: 44px;
+		}
+
+		@include _1024 {
+			width: 380px;
+			height: 64px;
+			left: 522px;
+			top: 377px;
+			font-size: 32px;
+		}
+
+		@include _768 {
+			width: 330px;
+			height: 56px;
+			left: 394px;
+			top: 460px;
+			font-size: 28px;
+		}
+
+		@include _360 {
+			width: 122px;
+			height: 56px;
+			left: 20px;
+			top: 405px;
+			font-size: 20px;
+		}
+
+		color: rgb(50, 50, 50);
+		font-family: Inter Tight;
+		font-size: 60px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+
+	&__link-btn {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 1660px;
+		height: 72px;
+		margin-top: 688px;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		@include _1440 {
+			width: 1300px;
+			height: 64px;
+		}
+
+		@include _1280 {
+			width: 1180px;
+			height: 56px;
+		}
+
+		@include _1024 {
+			width: 940px;
+			height: 72px;
+		}
+
+		@include _768 {
+			width: 700px;
+			height: 118px;
+		}
+
+		@include _360 {
+			display: none;
+		}
+	}
+
+	&__btn {
+		background: rgb(223, 238, 255);
+		width: 400px;
+		height: 72px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 20px;
+		padding: 16px 16px 16px 30px;
+
+		@include _1440 {
+			width: 310px;
+			height: 64px;
+			gap: 12px;
+			padding: 12px 12px 12px 20px;
+		}
+
+		@include _1280 {
+			width: 280px;
+			height: 56px;
+
+		}
+
+		@include _1024 {
+			width: 220px;
+			height: 72px;
+			padding: 8px 8px 8px 20px;
+		}
+
+		@include _768 {
+			width: 340px;
+			height: 54px;
+			gap: 20;
+			padding: 12px 12px 12px 24px;
+		}
+
+		@include _360 {
+			display: none;
+		}
+	}
+
+	&__btn .btn-text {
+		color: rgb(23, 121, 229);
+		font-family: Inter Tight;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+	}
+
+	&__btn .arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background: rgb(246, 250, 255);
+	}
+
+	&__btn .arrow svg {
+		width: 16px;
+		height: 16px;
+
+		@include _1024 {
+			width: 12px;
+			height: 12px;
+		}
+
+
+	}
+}
+
+.img1 {
+	background-image: url("../../img/caruselImg/1.png");
+}
+
+.img2 {
+	background-image: url("../../img/caruselImg/2.png");
+}
+
+.img3 {
+	background-image: url("../../img/caruselImg/3.png");
+}
+
+.img4 {
+	background-image: url("../../img/caruselImg/4.png");
+}
+
+.img5 {
+	background-image: url("../../img/caruselImg/5.png");
+}
+
+.title {
+	color: rgb(23, 121, 229);
+	font-family: Inter Tight;
+	font-size: 170px;
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.smart {
+	position: absolute;
+	width: 915px;
+	height: 170px;
+	left: 130px;
+	top: 355px;
+
+	@include _1440 {
+		width: 365px;
+		height: 130px;
+		left: 70px;
+		top: 331px;
+	}
+
+	@include _1280 {
+		width: 337px;
+		height: 120px;
+		left: 50px;
+		top: 307px;
+	}
+
+	@include _1024 {
+		width: 253px;
+		height: 90px;
+		left: 42px;
+		top: 279px;
+	}
+
+	@include _768 {
+		width: 309px;
+		height: 110px;
+		left: 34px;
+		top: 253px;
+	}
+
+	@include _360 {
+		width: 225px;
+		height: 80px;
+		left: 20px;
+		top: 320px;
+	}
+}
+
+.steel {
+	position: absolute;
+	width: 426px;
+	height: 170px;
+	left: 410px;
+	top: 505px;
+
+	@include _1440 {
+		width: 326px;
+		height: 130px;
+		left: 290px;
+		top: 439px;
+	}
+
+	@include _1280 {
+		width: 301px;
+		height: 120px;
+		left: 270px;
+		top: 407px;
+	}
+
+	@include _1024 {
+		width: 226px;
+		height: 90px;
+		left: 232px;
+		top: 359px;
+	}
+
+	@include _768 {
+		width: 276px;
+		height: 110px;
+		left: 244px;
+		top: 338px;
+	}
+
+	@include _360 {
+		width: 201px;
+		height: 80px;
+		left: 139px;
+		top: 394px;
 	}
 }
