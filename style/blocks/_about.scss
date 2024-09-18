@@ -20,7 +20,8 @@
 	}
 
 	@include _768 {
-		height: 716px;
+		height: 1542px;
+		flex-direction: column;
 	}
 
 	@include _360 {
@@ -70,6 +71,9 @@
 	}
 
 	&__right-column {
+		display: flex;
+		justify-content: end;
+		align-items: end;
 		width: 830px;
 		height: 944px;
 		background-image: url("../../img/abourBG.png");
@@ -90,11 +94,13 @@
 		}
 
 		@include _768 {
-			display: none;
+			width: 768px;
+			height: 880px;
 		}
 
 		@include _360 {
-			display: none;
+			width: 360px;
+			height: 700px
 		}
 	}
 
@@ -267,33 +273,126 @@
 		@include _1024 {
 			font-size: 12px;
 		}
-
-
 	}
 
+	&__content-wrap {
+		width: 530px;
+		height: 530px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 24px;
+		background: rgb(23, 121, 229);
+
+		@include _1440 {
+			width: 380px;
+			height: 460px;
+		}
+
+		@include _1280 {
+			width: 360px;
+			height: 460px;
+		}
+
+		@include _1024 {
+			width: 360px;
+			height: 400px;
+		}
+
+		@include _360 {
+			width: 280px;
+			height: 320px;
+		}
+	}
+
+
+	&__content-title {
+		width: 420px;
+		height: 96px;
+		color: rgb(246, 250, 255);
+		font-family: Inter Tight;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+
+		@include _1440 {
+			font-size: 18px;
+			width: 286px;
+			height: 72px;
+		}
+
+		@include _1280 {}
+
+		@include _1024 {}
+
+		@include _768 {}
+
+		@include _360 {
+			width: 240px;
+			height: 64px;
+			font-size: 16px;
+		}
+	}
+
+	&__content {
+		width: 378px;
+		height: 210px;
+		color: rgb(246, 250, 255);
+		font-family: Inter Tight;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 140%;
+		letter-spacing: 0%;
+		text-align: left;
+
+		@include _1440 {
+			width: 286px;
+			height: 230px;
+			font-size: 16px;
+		}
+
+		@include _1280 {}
+
+		@include _1024 {}
+
+		@include _768 {
+			width: 286px;
+			height: 170px;
+			font-size: 14px;
+		}
+
+		@include _360 {
+			width: 240px;
+			height: 163px;
+			font-size: 12px;
+		}
+	}
 }
 
 
-	.card-img1 {
-		background-image: url("../../img/aboutIco1.svg");
-	}
+.card-img1 {
+	background-image: url("../../img/aboutIco1.svg");
+}
 
-	.card-img2 {
-		background-image: url("../../img/aboutIco2.svg");
-	}
+.card-img2 {
+	background-image: url("../../img/aboutIco2.svg");
+}
 
-	.card-img3 {
-		background-image: url("../../img/aboutIco3.svg");
-	}
+.card-img3 {
+	background-image: url("../../img/aboutIco3.svg");
+}
 
-	.card-img4 {
-		background-image: url("../../img/aboutIco4.svg");
-	}
+.card-img4 {
+	background-image: url("../../img/aboutIco4.svg");
+}
 
-	.card-img5 {
-		background-image: url("../../img/aboutIco5.svg");
-	}
+.card-img5 {
+	background-image: url("../../img/aboutIco5.svg");
+}
 
-	.card-img6 {
-		background-image: url("../../img/aboutIco6.svg");
-	}
+.card-img6 {
+	background-image: url("../../img/aboutIco6.svg");
+}

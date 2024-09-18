@@ -1,0 +1,249 @@
+@import "../mixin/adaptive";
+
+.services {
+	width: 100vw;
+	height: 1172px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 130px;
+
+	@include _1440 {}
+
+	@include _1280 {}
+
+	@include _1024 {}
+
+	@include _768 {
+		flex-direction: column;
+		padding: 80px 34px 80px 34px;
+		height: 958px;
+		gap: 40px;
+	}
+
+	@include _360 {
+		height: 1964px;
+		padding: 60px 20px 60px 20px;
+
+	}
+
+	&__left-column {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 706px;
+
+		@include _1440 {}
+
+		@include _1280 {}
+
+		@include _1024 {}
+
+		@include _768 {}
+
+		@include _360 {}
+
+	}
+
+	&__left-column-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 170px;
+		height: 56px;
+		color: rgb(23, 121, 229);
+		font-family: Inter Tight;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+		border-radius: 90px;
+		background: rgb(223, 238, 255);
+		background-image: url("../../img/services-logo.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: start;
+		padding-left: 8%;
+
+		@include _1440 {
+			width: 153px;
+			height: 56px;
+			font-size: 20px;
+			padding-left: 10%;
+		}
+
+		@include _1280 {
+			width: 153px;
+			height: 56px;
+		}
+
+		@include _1024 {
+			width: 109px;
+			height: 38px;
+			font-size: 16px;
+		}
+
+		@include _768 {
+			padding: 4px 20px 4px 40px;
+		}
+
+		&__right-column {
+
+			width: 960px;
+			height: 912px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 60px;
+
+			@include _1440 {
+				width: 750px;
+				height: 882px;
+			}
+
+			@include _1280 {
+				width: 680px;
+				height: 860px;
+
+			}
+
+			@include _1024 {
+				width: 540px;
+				height: 729px;
+
+			}
+
+			@include _768 {
+				width: 700px;
+				height: 634px;
+			}
+
+			@include _360 {
+				width: 320px;
+				height: 1676px;
+			}
+		}
+	}
+
+	&__right-column-title {
+		color: rgb(50, 50, 50);
+		font-family: Inter Tight;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+		width: 960px;
+		height: 144px;
+		margin-bottom: 30px;
+
+		@include _1440 {
+			width: 750px;
+			height: 76px;
+			font-size: 38px;
+		}
+
+		@include _1280 {
+			width: 750px;
+			height: 76px;
+			font-size: 36px;
+		}
+
+		@include _1024 {
+			width: 540px;
+			height: 56px;
+			font-size: 28px;
+		}
+
+		@include _768 {
+			width: 700px;
+			height: 56px;
+		}
+
+		@include _360 {
+			font-size: 20px;
+			width: 320px;
+			height: 60px;
+		}
+	}
+
+	&__right-column-card {
+		display: flex;
+		flex-direction: row;
+		width: 960px;
+		height: 177px;
+		box-sizing: border-box;
+		border-bottom: 1px solid rgb(203, 216, 232);
+		border-top: 1px solid rgb(203, 216, 232);
+		padding: 24px 0px 24px 0px;
+
+		@include _1440 {
+			width: 750px;
+			height: 173px;
+		}
+
+		@include _1280 {
+			width: 680px;
+			height: 164px;
+		}
+
+		@include _1024 {
+			width: 540px;
+			height: 154px;
+		}
+
+		@include _768 {
+			width: 460px;
+			height: 114px;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 153px
+		}
+	}
+
+	&__right-column-card .services-content {
+		width: 820px;
+		height: 129px;
+		color: rgb(49, 49, 49);
+		font-family: Inter Tight;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-left: 140px;
+
+		@include _1440 {
+			width: 640px;
+			height: 125px;
+			margin-left: 110px;
+		}
+
+		@include _1280 {
+			width: 580px;
+			height: 116px;
+			margin-left: 100px;
+		}
+
+		@include _1024 {
+			width: 460px;
+			height: 114px;
+			margin-left: 80px;
+		}
+
+		@include _768 {
+			width: 460px;
+			height: 114px;
+			margin-left: 0;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 153px;
+		}
+	}
+}

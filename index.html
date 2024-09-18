@@ -38,12 +38,12 @@
 		<div class="header__down">
 			<div class="header__down-logo"></div>
 			<div class="header__down-links">
-				<a>О нас</a>
-				<a>Услуги</a>
-				<a>Наши работы</a>
-				<a>Отзывы</a>
-				<a>Новости</a>
-				<a>Контакты</a>
+				<a href="#main">О нас</a>
+				<a href="#services">Услуги</a>
+				<a href="#works">Наши работы</a>
+				<a href="#reviews">Отзывы</a>
+				<a href="#news">Новости</a>
+				<a href="#footer">Контакты</a>
 			</div>
 			<a class="header__down-btn btn">
 				<div class="btn-text">Заказать звонок</div>
@@ -61,12 +61,12 @@
 			</a>
 		</div>
 	</header>
-	<section class="main">
+	<section id="main" class="main">
 		<div class="main__title">
 			<div class="title smart">Умная</div>
 			<div class="title steel">сталь</div>
 		</div>
-		<swiper-container class="swiper-container main__swiper">
+		<swiper-container class="hide swiper-container main__swiper">
 			<swiper-slide>
 				<div class="main__carusel-img img1"></div>
 			</swiper-slide>
@@ -144,7 +144,7 @@
 			</a>
 		</div>
 	</section>
-	<section class="about">
+	<section id="about" class="about">
 		<div class="about__left-column">
 			<span class="about__left-column-title"><span>Удобное и надежное оборудование:</span> доступно в обслуживании и
 				просто в эксплуатации</span>
@@ -164,84 +164,89 @@
 					<div class="about__card-title">Индивидуальный подход</div>
 					<div class="about__card-info">Разрабатываем и адаптируем станки под ваши задачи</div>
 				</div>
-					<div class="about__card">
-						<div class="about__card-img card-img4"></div>
-						<div class="about__card-title">Комплексная поддержка</div>
-						<div class="about__card-info">От установки и запуска, до обслуживания и модернизации</div>
-					</div>
-					<div class="about__card">
-						<div class="about__card-img card-img5"></div>
-						<div class="about__card-title">Экономическая эффективность</div>
-						<div class="about__card-info">Производительные станки и низкие затраты на эксплуатацию</div>
-					</div>
-					<div class="about__card">
-						<div class="about__card-img card-img6"></div>
-						<div class="about__card-title">Немедленное реагирование</div>
-						<div class="about__card-info">Эффективно решаем любые задачи в ходе выполнения работ</div>
-					</div>
+				<div class="about__card">
+					<div class="about__card-img card-img4"></div>
+					<div class="about__card-title">Комплексная поддержка</div>
+					<div class="about__card-info">От установки и запуска, до обслуживания и модернизации</div>
+				</div>
+				<div class="about__card">
+					<div class="about__card-img card-img5"></div>
+					<div class="about__card-title">Экономическая эффективность</div>
+					<div class="about__card-info">Производительные станки и низкие затраты на эксплуатацию</div>
+				</div>
+				<div class="about__card">
+					<div class="about__card-img card-img6"></div>
+					<div class="about__card-title">Немедленное реагирование</div>
+					<div class="about__card-info">Эффективно решаем любые задачи в ходе выполнения работ</div>
+				</div>
 			</div>
 		</div>
 		<div class="about__right-column">
-			<div>
-				<div>Автоматизированное, соответствующее современным нормам оборудование на базе отечественных решений</div>
-				<div>Все оборудование изготавливается из отечественных комплектующих, что упрощает сервисное и техническое
+			<div class="about__content-wrap">
+				<div class="about__content-title">Автоматизированное, соответствующее современным нормам оборудование на
+					базе отечественных решений</div>
+				<div class="about__content">Все оборудование изготавливается из отечественных комплектующих, что упрощает
+					сервисное и техническое
 					обслуживание, а также снижает стоимость.
 					Программное обеспечение основано на российских реле и контроллерах компании «Овен», с поддержкой и
 					представительством в Республике Беларусь</div>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section id="services" class="services">
 		<div class="services__left-column">
-			<div class="left-column__title"></div>
-			<div class="left-column__img"></div>
-			<div class="left-column__img"></div>
-			<div class="left-column__img"></div>
-			<div class="left-column__img"></div>
+			<div class="services__left-column-title"><span>Услуги</span></div>
+			<div class="services__left-column-img"></div>
+			<div class="services__left-column-img"></div>
+			<div class="services__left-column-img"></div>
+			<div class="services__left-column-img"></div>
 		</div>
 		<div class="services__right-column">
-			<div class="right-column__title"></div>
-			<div class="right-column__card">
-				<div>01</div>
-				<div>
+			<div class="services__right-column-title">Предоставляем полный спектр услуг для эффективного и безопасного
+				производства
+			</div>
+			<div class="services__right-column-card">
+				<div class="num">01</div>
+				<div class="services-content">
 					<div>Проектирование и сборка электрических щитов</div>
 					<div>Мы предлагаем услуги по разработке и сборке электрических щитов любого уровня сложности. Наши
 						решения обеспечивают надежную работу ваших систем и соответствуют всем современным стандартам
 						безопасности.</div>
 				</div>
 			</div>
-			<div class="right-column__card">
-				<div class="right-column__card">
-					<div>02</div>
-					<div>
-						<div>Профессиональные сварочные работы</div>
-						<div>Наши квалифицированные специалисты выполняют сварочные работы любой сложности, гарантируя высокое
-							качество и долговечность сварных соединений для различных металлоконструкций.</div>
-					</div>
-				</div>
-				<div class="right-column__card">
-					<div>03</div>
-					<div>
-						<div>Создание автоматизированных производственных линий</div>
-						<div>Мы проектируем и внедряем автоматизированные линии, которые оптимизируют производственные
-							процессы и повышают эффективность вашего бизнеса. Наши решения адаптированы под конкретные
-							потребности вашего производства.</div>
-					</div>
+			<div class="services__right-column-card">
+				<div class="num">02</div>
+				<div class="services-content">
+					<div>Профессиональные сварочные работы</div>
+					<div>Наши квалифицированные специалисты выполняют сварочные работы любой сложности, гарантируя высокое
+						качество и долговечность сварных соединений для различных металлоконструкций.</div>
 				</div>
 			</div>
-			<div>04</div>
-			<div>
-				<div>Производство станков с ЧПУ и робототехники</div>
-				<div>Мы создаем высокоточные станки с числовым программным управлением (ЧПУ) и промышленных роботов, которые
-					обеспечивают автоматизацию и точность в производственных процессах, открывая новые возможности для вашего
-					бизнеса.</div>
+			<div class="services__right-column-card">
+				<div class="num">03</div>
+				<div class="services-content">
+					<div>Создание автоматизированных производственных линий</div>
+					<div>Мы проектируем и внедряем автоматизированные линии, которые оптимизируют производственные
+						процессы и повышают эффективность вашего бизнеса. Наши решения адаптированы под конкретные
+						потребности вашего производства.</div>
+				</div>
 			</div>
-		</div>
+			<div class="services__right-column-card">
+				<div class="num">04</div>
+				<div class="services-content">
+					<div>Производство станков с ЧПУ и робототехники</div>
+					<div>Мы создаем высокоточные станки с числовым программным управлением (ЧПУ) и промышленных роботов,
+						которые
+						обеспечивают автоматизацию и точность в производственных процессах, открывая новые возможности для
+						вашего
+						бизнеса.</div>
+				</div>
+			</div>
 		</div>
 
 	</section>
-	<section class="deviz"> Умная сталь – умные решения для твердых задач</section>
-	<section class="works">
+	<section id="deviz" class="deviz"> Умная сталь – умные решения для твердых задач</section>
+	<section id="works" class="works">
 		<div class="works__title">
 			<div>Наши работы</div>
 			<div>Лучшие решения для значительного повышения эффективности, качества и надежности производства</div>
@@ -329,10 +334,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="reviews"></section>
-	<section class="news"></section>
-	<section class="contacts"> </section>
-	<footer class=""> </footer>
+	<section id="reviews" class="reviews"></section>
+	<section id="news" class="news"></section>
+	<section id="contacts" class="contacts"> </section>
+	<footer id="footer" class="footer"> </footer>
 </body>
 
 </html>

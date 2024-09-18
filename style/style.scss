@@ -3,14 +3,19 @@
 @import "../style/blocks/header";
 @import "../style/blocks/main";
 @import "../style/blocks/about";
-
+@import "../style/blocks/services";
 
 
 
 
 html {
+	
 	height: 100%;
+	scroll-behavior: smooth;	
 	& * {
+
+//outline: 4px solid green !important;
+
 	  margin: 0;
 	  padding: 0;
 	  box-sizing: border-box;
@@ -23,6 +28,8 @@ html {
 	& body {
 		font-family: Inter Tight;
 		height: 100%;
+		width: 100vw;
+			
 	}
  }
  
