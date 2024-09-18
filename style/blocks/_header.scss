@@ -211,7 +211,13 @@
 		}
 
 		@include _360 {
-			display: none;
+			display: flex;
+			position: absolute;
+width: 320px;
+height: 46px;
+left: 20px;
+top: 634px;
+padding: 8px 8px 8px 30px;
 		}
 		height: 60px;
 		display: flex;

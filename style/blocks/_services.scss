@@ -4,22 +4,27 @@
 	width: 100vw;
 	height: 1172px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
 	padding: 130px;
 
-	@include _1440 {}
+	@include _1440 {
+		padding: 100px 70px 100px 70px;
+	}
 
-	@include _1280 {}
+	@include _1280 {
+		padding: 100px 50px 100px 50px;
+	}
 
-	@include _1024 {}
+	@include _1024 {
+		padding: 80px 42px 80px 42px;
+	}
 
 	@include _768 {
 		flex-direction: column;
 		padding: 80px 34px 80px 34px;
 		height: 958px;
-		gap: 40px;
 	}
 
 	@include _360 {
@@ -28,25 +33,36 @@
 
 	}
 
-	&__left-column {
+
+	&__head {
 		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		width: 706px;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 536px;
 
-		@include _1440 {}
+		@include _1440 {
+			gap: 397px;
+		}
 
-		@include _1280 {}
+		@include _1280 {
+			gap: 347px;
+		}
 
-		@include _1024 {}
+		@include _1024 {
+			gap: 291px;
+		}
 
-		@include _768 {}
+		@include _768 {
+			flex-direction: column;
+			justify-content: flex-start;
+			gap: 30px;
+		}
 
 		@include _360 {}
-
 	}
 
-	&__left-column-title {
+
+	&__head-logo {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -65,7 +81,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: start;
-		padding-left: 8%;
+		padding-left: 3%;
 
 		@include _1440 {
 			width: 153px;
@@ -89,45 +105,10 @@
 			padding: 4px 20px 4px 40px;
 		}
 
-		&__right-column {
 
-			width: 960px;
-			height: 912px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 60px;
-
-			@include _1440 {
-				width: 750px;
-				height: 882px;
-			}
-
-			@include _1280 {
-				width: 680px;
-				height: 860px;
-
-			}
-
-			@include _1024 {
-				width: 540px;
-				height: 729px;
-
-			}
-
-			@include _768 {
-				width: 700px;
-				height: 634px;
-			}
-
-			@include _360 {
-				width: 320px;
-				height: 1676px;
-			}
-		}
 	}
 
-	&__right-column-title {
+	&__head-title {
 		color: rgb(50, 50, 50);
 		font-family: Inter Tight;
 		font-size: 48px;
@@ -169,7 +150,36 @@
 		}
 	}
 
-	&__right-column-card {
+	&__wrap-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 160px;
+
+		@include _1440 {
+			gap: 130px;
+		}
+
+		@include _1280 {
+			gap: 120px;
+		}
+
+		@include _1024 {
+			gap: 100px;
+		}
+
+		@include _768 {
+			gap: 40px;
+		}
+
+		@include _360 {
+			gap: 20px;
+			flex-direction: column;
+		}
+	}
+
+	&__card {
 		display: flex;
 		flex-direction: row;
 		width: 960px;
@@ -190,22 +200,25 @@
 		}
 
 		@include _1024 {
+			padding: 20px 0px 20px 0px;
 			width: 540px;
 			height: 154px;
 		}
 
 		@include _768 {
 			width: 460px;
-			height: 114px;
+			height: 154px;
 		}
 
 		@include _360 {
+			padding: 0;
 			width: 320px;
-			height: 153px
+			height: 174px;
+			margin: 20px 0px;
 		}
 	}
 
-	&__right-column-card .services-content {
+	&__card .services-content {
 		width: 820px;
 		height: 129px;
 		color: rgb(49, 49, 49);
@@ -221,6 +234,7 @@
 			width: 640px;
 			height: 125px;
 			margin-left: 110px;
+			font-size: 18px;
 		}
 
 		@include _1280 {
@@ -233,6 +247,7 @@
 			width: 460px;
 			height: 114px;
 			margin-left: 80px;
+			font-size: 14px;
 		}
 
 		@include _768 {
@@ -246,4 +261,89 @@
 			height: 153px;
 		}
 	}
+
+	&__name {
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 100%;
+		padding-bottom: 10px;
+
+		@include _1440 {
+			font-size: 18px;
+		}
+	}
+
+	&__card .num {
+		color: rgb(23, 121, 229);
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+
+		@include _1024 {
+			font-size: 14px;
+		}
+
+		@include _768 {
+			display: none;
+		}
+
+		@include _360 {
+			display: none;
+		}
+	}
+
+	&__img {
+		width: 540px;
+		height: 177px;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+
+		@include _1440 {
+			width: 420px;
+			height: 173px;
+			gap: 130px;
+		}
+
+		@include _1280 {
+			width: 380px;
+			height: 164px;
+			gap: 120px;
+		}
+
+		@include _1024 {
+			width: 302px;
+			height: 154px;
+			gap: 100px;
+		}
+
+		@include _768 {
+			width: 200px;
+			height: 114px;
+			gap: 40px;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 200px;
+		}
+	}
+}
+
+.image1 {
+	background-image: url("../../img/services1.png");
+}
+
+.image2 {
+	background-image: url("../../img/services1.png");
+}
+
+.image3 {
+	background-image: url("../../img/services1.png");
+}
+
+.image4 {
+	background-image: url("../../img/services1.png");
 }
