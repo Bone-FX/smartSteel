@@ -1,0 +1,210 @@
+@import "../mixin/adaptive";
+
+.news {
+	height: 1132px;
+	padding: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 60px;
+
+	@include _1440 {
+		height: 922px;
+		padding: 100px 70px 100px 70px;
+	}
+
+	@include _1280 {
+		height: 868px;
+		padding: 100px 50px 100px 50px;
+		gap: 40px;
+	}
+
+	@include _1024 {
+		height: 684px;
+		padding: 80px 42px 80px 42px;
+		gap: 30px;
+	}
+
+	@include _768 {
+		height: 666px;
+		padding: 80px 34px 80px 34px;
+	}
+
+	@include _360 {
+		height: 670px;
+		padding: 60px 20px 60px 20px;
+	}
+
+	&__logo {
+		width: 310px;
+		height: 56px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 16px;
+		padding: 8px 30px 8px 8px;
+		border-radius: 90px;
+		background: rgb(223, 238, 255);
+
+		@include _1440 {
+			width: 320px;
+			height: 56px;
+		}
+
+		@include _1280 {
+			width: 300px;
+			height: 56px;
+		}
+
+		@include _1024 {
+			width: 220px;
+			height: 38px;
+			padding: 4px 20px 4px 4px;
+		}
+
+	}
+
+	&__logo-img {
+		border-radius: 34px;
+		background: rgb(23, 121, 229);
+		width: 40px;
+		height: 40px;
+		background-image: url("../../img/news-logo.svg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		@include _1024 {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	&__logo span {
+		color: rgb(23, 121, 229);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+
+		@include _1440 {
+			font-size: 20px;
+		}
+
+		@include _1024 {
+			font-size: 16px;
+		}
+	}
+
+	&__title {
+		width: 1100px;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+		color: rgb(49, 49, 49);
+		box-sizing: border-box;
+
+		@include _1440 {
+			width: 860px;
+			font-size: 38px;
+		}
+
+		@include _1280 {
+			width: 830px;
+			font-size: 36px;
+		}
+
+		@include _1024 {
+			width: 640px;
+			font-size: 28px;
+		}
+
+		@include _768 {
+			width: 640px;
+		}
+
+		@include _360 {
+			width: 320px;
+			font-size: 20px;
+		}
+
+	}
+
+	&__title span {
+		color: rgb(23, 121, 229);
+	}
+&__swaper{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+	&__swiper-item {
+		width: 540px;
+		height: 600px;
+		background-color: black;
+		display: flex;
+		align-items: end;
+		justify-content: end;
+	}
+
+	&__description{
+		background: rgb(23, 121, 229);
+		width: 360px;
+		height: 320px;
+		padding: 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__date{
+		color: rgb(246, 250, 255);
+font-size: 14px;
+font-weight: 400;
+line-height: 100%;
+text-align: left;
+margin-bottom: 20px;
+	}
+	&__title-card{
+		color: rgb(246, 250, 255);
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+		width: 260px;
+		height: 40px;
+	}
+	&__conditions{
+		color: rgb(246, 250, 255);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 140%;
+		letter-spacing: 0%;
+		text-align: left;
+		width: 260px;
+		height: 66px;
+	}
+
+}
+
+
+
+
+
+
+
+@include _1440 {}
+
+@include _1280 {}
+
+@include _1024 {}
+
+@include _768 {}
+
+@include _360 {}

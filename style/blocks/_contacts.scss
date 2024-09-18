@@ -1,0 +1,18 @@
+@import "../mixin/adaptive";
+
+.contacts {
+	height: 886px;
+	padding: 0px 130px 130px 130px;
+
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		width: 1660px;
+		height: 756px;
+		padding: 120px 140px 120px 140px;
+		background: rgb(223, 238, 255);
+	}
+
+}

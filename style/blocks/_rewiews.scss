@@ -1,0 +1,39 @@
+@import "../mixin/adaptive";
+
+.reviews {
+	height: 1066px;
+	padding: 130px;
+	background: rgb(23, 121, 229);
+
+	@include _1440 {
+		height: 876px;
+		padding: 100px 70px 100px 70px;
+	}
+
+	@include _1280 {
+		height: 856px;
+		padding: 100px 50px 100px 50px;
+	}
+
+	@include _1024 {
+		height: 671px;
+		padding: 80px 42px 80px 42px;
+	}
+
+	@include _768 {
+		height: 651px;
+		padding: 80px 34px 80px 34px;
+	}
+
+	@include _360 {
+		height: 725px;
+		padding: 60px 20px 60px 20px;
+	}
+}
+
+
+@include _1440{}
+@include _1280{}
+@include _1024{}
+@include _768{}
+@include _360{}
