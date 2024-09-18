@@ -347,6 +347,8 @@ main-title {
   .main__swiper {
     height: 220px;
     left: 510px;
+    left: 510px;
+    top: 222px;
   }
 }
 @media (max-width: 1280px) {
@@ -542,24 +544,28 @@ main-title {
   .main__link-btn {
     width: 1300px;
     height: 64px;
+    margin-top: 586px;
   }
 }
 @media (max-width: 1280px) {
   .main__link-btn {
     width: 1180px;
     height: 56px;
+    margin-top: 596px;
   }
 }
 @media (max-width: 1024px) {
   .main__link-btn {
     width: 940px;
     height: 72px;
+    margin-top: 498px;
   }
 }
 @media (max-width: 768px) {
   .main__link-btn {
     width: 700px;
     height: 118px;
+    margin-top: 478px;
   }
 }
 @media (max-width: 360px) {
@@ -620,6 +626,36 @@ main-title {
   line-height: 100%;
   letter-spacing: -2%;
   text-align: left;
+  width: 294px;
+  height: 40px;
+}
+@media (max-width: 1440px) {
+  .main__btn .btn-text {
+    font-size: 16px;
+    width: 294px;
+    height: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .main__btn .btn-text {
+    font-size: 14px;
+    width: 200px;
+    height: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .main__btn .btn-text {
+    font-size: 14px;
+    width: 150px;
+    height: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .main__btn .btn-text {
+    font-size: 14px;
+    width: 254px;
+    height: 28px;
+  }
 }
 .main__btn .arrow {
   display: flex;
@@ -683,6 +719,7 @@ main-title {
     height: 130px;
     left: 70px;
     top: 331px;
+    font-size: 130px;
   }
 }
 @media (max-width: 1280px) {
@@ -691,6 +728,7 @@ main-title {
     height: 120px;
     left: 50px;
     top: 307px;
+    font-size: 120px;
   }
 }
 @media (max-width: 1024px) {
@@ -699,6 +737,7 @@ main-title {
     height: 90px;
     left: 42px;
     top: 279px;
+    font-size: 90px;
   }
 }
 @media (max-width: 768px) {
@@ -707,6 +746,7 @@ main-title {
     height: 110px;
     left: 34px;
     top: 253px;
+    font-size: 110px;
   }
 }
 @media (max-width: 360px) {
@@ -715,6 +755,7 @@ main-title {
     height: 80px;
     left: 20px;
     top: 320px;
+    font-size: 80px;
   }
 }
 
@@ -731,6 +772,7 @@ main-title {
     height: 130px;
     left: 290px;
     top: 439px;
+    font-size: 130px;
   }
 }
 @media (max-width: 1280px) {
@@ -739,6 +781,7 @@ main-title {
     height: 120px;
     left: 270px;
     top: 407px;
+    font-size: 120px;
   }
 }
 @media (max-width: 1024px) {
@@ -747,6 +790,7 @@ main-title {
     height: 90px;
     left: 232px;
     top: 359px;
+    font-size: 90px;
   }
 }
 @media (max-width: 768px) {
@@ -755,6 +799,7 @@ main-title {
     height: 110px;
     left: 244px;
     top: 338px;
+    font-size: 110px;
   }
 }
 @media (max-width: 360px) {
@@ -763,7 +808,324 @@ main-title {
     height: 80px;
     left: 139px;
     top: 394px;
+    font-size: 80px;
   }
+}
+
+.about {
+  height: 1016px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .about {
+    height: 840px;
+  }
+}
+@media (max-width: 1280px) {
+  .about {
+    height: 814px;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    height: 716px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    height: 716px;
+  }
+}
+@media (max-width: 360px) {
+  .about {
+    height: 853px;
+  }
+}
+.about__left-column {
+  display: flex;
+  flex-direction: column;
+  width: 1090px;
+  height: 1016px;
+  gap: 60px;
+  padding: 130px;
+  background: rgb(223, 238, 255);
+}
+@media (max-width: 1440px) {
+  .about__left-column {
+    width: 820px;
+    height: 840px;
+    padding: 100px 70px 100px 70px;
+  }
+}
+@media (max-width: 1280px) {
+  .about__left-column {
+    width: 730px;
+    height: 814px;
+    padding: 100px 50px 100px 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__left-column {
+    width: 544px;
+    height: 716px;
+    padding: 80px 42px 80px 42px;
+  }
+}
+@media (max-width: 768px) {
+  .about__left-column {
+    width: 768px;
+    height: 662px;
+    gap: 40px;
+    padding: 80px 34px 80px 34px;
+  }
+}
+@media (max-width: 360px) {
+  .about__left-column {
+    width: 360px;
+    height: 853px;
+    gap: 40px;
+    padding: 60px 20px 60px 20px;
+  }
+}
+.about__right-column {
+  width: 830px;
+  height: 944px;
+  background-image: url("../../img/abourBG.png");
+}
+@media (max-width: 1440px) {
+  .about__right-column {
+    width: 620px;
+    height: 840px;
+  }
+}
+@media (max-width: 1280px) {
+  .about__right-column {
+    width: 550px;
+    height: 814px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__right-column {
+    width: 480px;
+    height: 716px;
+  }
+}
+@media (max-width: 768px) {
+  .about__right-column {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .about__right-column {
+    display: none;
+  }
+}
+.about__left-column-title {
+  color: rgb(50, 50, 50);
+  width: 760px;
+  height: 194px;
+  font-family: Inter Tight;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: left;
+}
+@media (max-width: 1440px) {
+  .about__left-column-title {
+    width: 610px;
+    height: 114px;
+    font-size: 38px;
+  }
+}
+@media (max-width: 1280px) {
+  .about__left-column-title {
+    width: 570px;
+    height: 108px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__left-column-title {
+    width: 450px;
+    height: 84px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .about__left-column-title {
+    width: 450px;
+    height: 84px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 360px) {
+  .about__left-column-title {
+    width: 320px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+.about__left-column-title span {
+  color: rgb(23, 121, 229);
+  line-height: 100%;
+}
+.about__card-wrap {
+  width: 820px;
+  height: 502px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px;
+}
+@media (max-width: 1440px) {
+  .about__card-wrap {
+    width: 640px;
+    height: 466px;
+  }
+}
+@media (max-width: 1280px) {
+  .about__card-wrap {
+    width: 580px;
+    height: 446px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__card-wrap {
+    width: 460px;
+    height: 412px;
+  }
+}
+@media (max-width: 768px) {
+  .about__card-wrap {
+    width: 700px;
+    height: 378px;
+    align-self: stretch;
+  }
+}
+@media (max-width: 360px) {
+  .about__card-wrap {
+    width: 320px;
+    height: 633px;
+  }
+}
+.about__card {
+  width: 260px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px 0px 12px 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(203, 216, 232);
+}
+@media (max-width: 1440px) {
+  .about__card {
+    width: 200px;
+    height: 218px;
+  }
+}
+@media (max-width: 1280px) {
+  .about__card {
+    width: 180px;
+    height: 208px;
+    gap: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__card {
+    width: 140px;
+    height: 191px;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .about__card {
+    width: 220px;
+    height: 174px;
+  }
+}
+@media (max-width: 360px) {
+  .about__card {
+    width: 150px;
+    height: 191px;
+  }
+}
+.about__card-img {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1280px) {
+  .about__card-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.about__card-title {
+  color: rgb(50, 50, 50);
+  font-family: Inter Tight;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: left;
+}
+@media (max-width: 1440px) {
+  .about__card-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__card-title {
+    font-size: 16px;
+  }
+}
+.about__card-info {
+  padding: 0px 0px 12px 0px;
+  color: rgb(106, 106, 106);
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .about__card-info {
+    font-size: 12px;
+  }
+}
+
+.card-img1 {
+  background-image: url("../../img/aboutIco1.svg");
+}
+
+.card-img2 {
+  background-image: url("../../img/aboutIco2.svg");
+}
+
+.card-img3 {
+  background-image: url("../../img/aboutIco3.svg");
+}
+
+.card-img4 {
+  background-image: url("../../img/aboutIco4.svg");
+}
+
+.card-img5 {
+  background-image: url("../../img/aboutIco5.svg");
+}
+
+.card-img6 {
+  background-image: url("../../img/aboutIco6.svg");
 }
 
 html {

@@ -64,6 +64,8 @@ main-title {
 		@include _1440 {
 			height: 220px;
 			left: 510px;
+			left: 510px;
+			top: 222px;
 		}
 
 		@include _1280 {
@@ -246,21 +248,25 @@ main-title {
 		@include _1440 {
 			width: 1300px;
 			height: 64px;
+			margin-top: 586px;
 		}
 
 		@include _1280 {
 			width: 1180px;
 			height: 56px;
+			margin-top: 596px;
 		}
 
 		@include _1024 {
 			width: 940px;
 			height: 72px;
+			margin-top: 498px;
 		}
 
 		@include _768 {
 			width: 700px;
 			height: 118px;
+			margin-top: 478px;
 		}
 
 		@include _360 {
@@ -318,6 +324,36 @@ main-title {
 		line-height: 100%;
 		letter-spacing: -2%;
 		text-align: left;
+		width: 294px;
+		height: 40px;
+
+		@include _1440 {
+			font-size: 16px;
+			width: 294px;
+			height: 40px;
+		}
+
+		@include _1280 {
+			font-size: 14px;
+			width: 200px;
+			height: 28px;
+		}
+
+		@include _1024 {
+			font-size: 14px;
+			width: 150px;
+			height: 42px;
+		}
+
+		@include _768 {
+			font-size: 14px;
+			width: 254px;
+			height: 28px;
+		}
+
+
+
+
 	}
 
 	&__btn .arrow {
@@ -384,6 +420,7 @@ main-title {
 		height: 130px;
 		left: 70px;
 		top: 331px;
+		font-size: 130px;
 	}
 
 	@include _1280 {
@@ -391,6 +428,7 @@ main-title {
 		height: 120px;
 		left: 50px;
 		top: 307px;
+		font-size: 120px;
 	}
 
 	@include _1024 {
@@ -398,6 +436,7 @@ main-title {
 		height: 90px;
 		left: 42px;
 		top: 279px;
+		font-size: 90px;
 	}
 
 	@include _768 {
@@ -405,6 +444,7 @@ main-title {
 		height: 110px;
 		left: 34px;
 		top: 253px;
+		font-size: 110px;
 	}
 
 	@include _360 {
@@ -412,6 +452,7 @@ main-title {
 		height: 80px;
 		left: 20px;
 		top: 320px;
+		font-size: 80px;
 	}
 }
 
@@ -427,6 +468,7 @@ main-title {
 		height: 130px;
 		left: 290px;
 		top: 439px;
+		font-size: 130px;
 	}
 
 	@include _1280 {
@@ -434,6 +476,7 @@ main-title {
 		height: 120px;
 		left: 270px;
 		top: 407px;
+		font-size: 120px;
 	}
 
 	@include _1024 {
@@ -441,6 +484,7 @@ main-title {
 		height: 90px;
 		left: 232px;
 		top: 359px;
+		font-size: 90px;
 	}
 
 	@include _768 {
@@ -448,6 +492,7 @@ main-title {
 		height: 110px;
 		left: 244px;
 		top: 338px;
+		font-size: 110px;
 	}
 
 	@include _360 {
@@ -455,5 +500,6 @@ main-title {
 		height: 80px;
 		left: 139px;
 		top: 394px;
+		font-size: 80px;
 	}
 }

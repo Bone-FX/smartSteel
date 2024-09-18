@@ -1,0 +1,299 @@
+@import "../mixin/adaptive";
+
+.about {
+	height: 1016px;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	@include _1440 {
+		height: 840px;
+	}
+
+	@include _1280 {
+		height: 814px;
+	}
+
+	@include _1024 {
+		height: 716px;
+	}
+
+	@include _768 {
+		height: 716px;
+	}
+
+	@include _360 {
+		height: 853px;
+	}
+
+	&__left-column {
+		display: flex;
+		flex-direction: column;
+		width: 1090px;
+		height: 1016px;
+		gap: 60px;
+		padding: 130px;
+		background: rgb(223, 238, 255);
+
+		@include _1440 {
+			width: 820px;
+			height: 840px;
+			padding: 100px 70px 100px 70px;
+		}
+
+		@include _1280 {
+			width: 730px;
+			height: 814px;
+			padding: 100px 50px 100px 50px;
+		}
+
+		@include _1024 {
+			width: 544px;
+			height: 716px;
+			padding: 80px 42px 80px 42px;
+		}
+
+		@include _768 {
+			width: 768px;
+			height: 662px;
+			gap: 40px;
+			padding: 80px 34px 80px 34px;
+		}
+
+		@include _360 {
+			width: 360px;
+			height: 853px;
+			gap: 40px;
+			padding: 60px 20px 60px 20px;
+		}
+	}
+
+	&__right-column {
+		width: 830px;
+		height: 944px;
+		background-image: url("../../img/abourBG.png");
+
+		@include _1440 {
+			width: 620px;
+			height: 840px;
+		}
+
+		@include _1280 {
+			width: 550px;
+			height: 814px;
+		}
+
+		@include _1024 {
+			width: 480px;
+			height: 716px;
+		}
+
+		@include _768 {
+			display: none;
+		}
+
+		@include _360 {
+			display: none;
+		}
+	}
+
+	&__left-column-title {
+		color: rgb(50, 50, 50);
+		width: 760px;
+		height: 194px;
+		font-family: Inter Tight;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+
+		@include _1440 {
+			width: 610px;
+			height: 114px;
+			font-size: 38px;
+		}
+
+		@include _1280 {
+			width: 570px;
+			height: 108px;
+			font-size: 36px;
+		}
+
+		@include _1024 {
+			width: 450px;
+			height: 84px;
+			font-size: 28px;
+		}
+
+		@include _768 {
+			width: 450px;
+			height: 84px;
+			font-size: 28px;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 60px;
+			font-size: 20px;
+		}
+	}
+
+	&__left-column-title span {
+		color: rgb(23, 121, 229);
+		line-height: 100%;
+
+	}
+
+	&__card-wrap {
+		width: 820px;
+		height: 502px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 0px;
+
+		@include _1440 {
+			width: 640px;
+			height: 466px;
+		}
+
+		@include _1280 {
+			width: 580px;
+			height: 446px;
+		}
+
+		@include _1024 {
+			width: 460px;
+			height: 412px;
+		}
+
+		@include _768 {
+			width: 700px;
+			height: 378px;
+			align-self: stretch;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 633px;
+		}
+
+	}
+
+	&__card {
+		width: 260px;
+		height: 220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 40px;
+		padding: 0px 0px 12px 0px;
+		box-sizing: border-box;
+		border-bottom: 1px solid rgb(203, 216, 232);
+
+
+		@include _1440 {
+			width: 200px;
+			height: 218px;
+		}
+
+		@include _1280 {
+			width: 180px;
+			height: 208px;
+			gap: 30px;
+		}
+
+		@include _1024 {
+			width: 140px;
+			height: 191px;
+			gap: 30px;
+		}
+
+		@include _768 {
+			width: 220px;
+			height: 174px;
+		}
+
+		@include _360 {
+			width: 150px;
+			height: 191px;
+		}
+	}
+
+	&__card-img {
+		width: 60px;
+		height: 60px;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@include _1280 {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	&__card-title {
+		color: rgb(50, 50, 50);
+		font-family: Inter Tight;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: left;
+
+		@include _1440 {
+			font-size: 20px;
+		}
+
+		@include _1024 {
+			font-size: 16px;
+		}
+	}
+
+	&__card-info {
+		padding: 0px 0px 12px 0px;
+		color: rgb(106, 106, 106);
+		font-family: Inter Tight;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 140%;
+		letter-spacing: 0%;
+		text-align: left;
+
+		@include _1024 {
+			font-size: 12px;
+		}
+
+
+	}
+
+}
+
+
+	.card-img1 {
+		background-image: url("../../img/aboutIco1.svg");
+	}
+
+	.card-img2 {
+		background-image: url("../../img/aboutIco2.svg");
+	}
+
+	.card-img3 {
+		background-image: url("../../img/aboutIco3.svg");
+	}
+
+	.card-img4 {
+		background-image: url("../../img/aboutIco4.svg");
+	}
+
+	.card-img5 {
+		background-image: url("../../img/aboutIco5.svg");
+	}
+
+	.card-img6 {
+		background-image: url("../../img/aboutIco6.svg");
+	}
