@@ -3216,6 +3216,7 @@ html body {
   font-family: Inter Tight;
   height: 100%;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .hide {
