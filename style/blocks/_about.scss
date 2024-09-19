@@ -72,8 +72,8 @@
 
 	&__right-column {
 		display: flex;
-		justify-content: end;
-		align-items: end;
+		justify-content: flex-end;
+		align-items: flex-end;
 		width: 830px;
 		height: 944px;
 		background-image: url("../../img/abourBG.png");
