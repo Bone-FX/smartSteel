@@ -4,6 +4,27 @@
 	height: 886px;
 	padding: 0px 130px 130px 130px;
 
+	@include _1440 {
+		padding: 0px 70px 100px 70px;
+	}
+
+	@include _1280 {
+		padding: 0px 50px 100px 50px;
+	}
+
+	@include _1024 {
+		padding: 0px 42px 80px 42px;
+	}
+
+	@include _768 {
+		padding: 0px 34px 80px 34px;
+	}
+
+	@include _360 {
+		padding: 0px 20px 60px 20px;
+	}
+
+
 	&__wrap {
 		display: flex;
 		flex-direction: row;
@@ -13,6 +34,36 @@
 		height: 756px;
 		padding: 120px 140px 120px 140px;
 		background: rgb(223, 238, 255);
+
+		@include _1440 {
+			width: 1300px;
+			height: 720px;
+			padding: 100px 110px 100px 110px;
+		}
+
+		@include _1280 {
+			width: 1180px;
+			height: 652px;
+			padding: 80px 100px 80px 100px;
+		}
+
+		@include _1024 {
+			width: 940px;
+			height: 600px;
+			padding: 60px 80px 60px 80px;
+		}
+
+		@include _768 {
+			width: 700px;
+			height: 720px;
+			padding: 120px;
+		}
+
+		@include _360 {
+			width: 320px;
+			height: 553px;
+			padding: 60px 30px 60px 30px;
+		}
 	}
 
 	&__form {
@@ -271,87 +322,211 @@
 			height: 211px;
 		}
 	}
-		&__description {
+
+	&__description {
+		width: 380px;
+		height: 490px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 24px;
+		padding: 10px 0px 0px 0px;
+
+		@include _1440 {
+			width: 420px;
+			height: 490px;
+		}
+
+		@include _1280 {
 			width: 380px;
 			height: 490px;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			gap: 24px;
-			padding: 10px 0px 0px 0px;
-		}
-		&__description-head{
-			gap: 16px;
-		}
-		&__description-title{
-			font-size: 28px;
-			font-weight: 500;
-			line-height: 100%;
-			letter-spacing: -2%;
+			gap: 40px;
 		}
 
-		&__description-text{
+		@include _1024 {
+			width: 300px;
+			height: 471px;
+		}
+
+		@include _768 {
+			display: none;
+		}
+	}
+
+	&__description-head {
+		gap: 16px;
+	}
+
+	&__description-title {
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: -2%;
+
+		@include _1440 {
+			font-size: 24px;
+		}
+
+		@include _1280 {
+			margin-bottom: 5px;
+		}
+
+		@include _1024 {
+			font-size: 20px;
+		}
+
+
+	}
+
+	&__description-text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+
+		@include _1440 {
 			font-size: 16px;
-			font-weight: 400;
-			line-height: 150%;
+			width: 410px;
+			height: 42px;
 		}
-		&__description-main{
-			display: flex;
-			flex-direction: column;
-			gap: 12px;
-			justify-content: space-between;
-			border-top: 1px solid rgb(203, 216, 232);
-			border-bottom: 1px solid rgb(203, 216, 232);
-			padding: 24px 0;
+
+		@include _1280 {
+			width: 380px;
+			height: 42px;
 		}
-		&__description-main1{
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 100%;
+
+		@include _1024 {
+			width: 300px;
+			height: 63px;
 		}
-		&__description-main2{
-			font-size: 24px;
-			font-weight: 400;
-			line-height: 100%;
-		}
-		&__description-main3{
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 100%;
-		}
-		&__description-main4{
-			font-size: 24px;
-			font-weight: 400;
-			line-height: 100%;
-		}
-		&__description-main5{
+
+
+	}
+
+	&__description-main {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		justify-content: space-between;
+		border-top: 1px solid rgb(203, 216, 232);
+		border-bottom: 1px solid rgb(203, 216, 232);
+		padding: 24px 0;
+
+		@include _1440 {}
+
+		@include _1280 {}
+
+		@include _1024 {}
+
+
+	}
+
+	&__description-main1 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1024 {
 			font-size: 16px;
-font-weight: 300;
-			line-height: 100%;
 		}
-		&__description-main6{
+
+
+	}
+
+	&__description-main2 {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1440 {
+			font-size: 20px;
+		}
+
+		@include _1280 {}
+
+		@include _1024 {
 			font-size: 18px;
-			font-weight: 400;
-			line-height: 100%;
+			width: 300px;
+			height: 54px;
 		}
-		&__description-email{
-			font-size: 24px;
-			font-weight: 400;
-			line-height: 100%;
+
+
+	}
+
+	&__description-main3 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1024 {
+			font-size: 16px;
 		}
+
+	}
+
+	&__description-main4 {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1440 {
+			font-size: 20px;
+		}
+
+
+
+		@include _1024 {
+			font-size: 18px;
+		}
+
+
+	}
+
+	&__description-main5 {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 100%;
+
+
+		@include _1024 {
+			font-size: 14px;
+		}
+
+
+	}
+
+	&__description-main6 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1440 {
+			font-size: 20px;
+		}
+
+		@include _1280 {}
+
+		@include _1024 {
+			font-size: 18px;
+		}
+
+
+	}
+
+	&__description-email {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+
+		@include _1440 {
+			font-size: 18px;
+		}
+
+		@include _1024 {
+			font-size: 16px;
+		}
+
+
+	}
 
 }
-
-
-
-
-@include _1440 {}
-
-@include _1280 {}
-
-@include _1024 {}
-
-@include _768 {}
-
-@include _360 {}
